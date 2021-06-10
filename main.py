@@ -62,7 +62,7 @@ def callback_inline(call):
         if call.message:
             if call.data == 'uzb':
                 from uzb import qwer
-                bot.send_message(call.message.chat.id, text=qwer, reply_markup=mark.add(menu1uz, menu2uz, menu3uz))
+                bot.send_message(call.message.chat.id, 'Вы выбрали узб язык', reply_markup=mark.add(menu1uz, menu2uz, menu3uz))
 
             elif call.data == 'ru':
                 bot.send_message(call.message.chat.id, 'Вы выбрали русский язык', reply_markup=mark.add(menu1ru, menu2ru, menu3ru))
